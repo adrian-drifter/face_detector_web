@@ -4,10 +4,12 @@ setuptools>=26
 twine
 wheel>=0.29
 
+
 # data science
 numpy
 pandas
 scikit-learn
+tensorflow.keras.models
 
 # tests/linter
 black
