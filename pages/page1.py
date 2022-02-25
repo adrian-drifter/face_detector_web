@@ -8,7 +8,7 @@ from IPython.display import Image
 from imutils import url_to_image
 import pylab
 import numpy as np
-import cv2
+#import cv2
 import os
 
 
