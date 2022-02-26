@@ -126,9 +126,9 @@ def prediction2(img):
             col = (0, 255, 0)
             cv2.putText(test_image, str(i), (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, col, 2)
         proc_image = cv2.cvtColor(test_image, cv2.COLOR_BGR2RGB)
-        # plt.imshow(proc_image)
-        # plt.show()
-        #st.image(cv2.cvtColor(test_image, cv2.COLOR_BGR2RGB))
+        #plt.imshow(proc_image)
+        #plt.show()
+        st.image(cv2.cvtColor(test_image, cv2.COLOR_BGR2RGB))
     return subjects
 
 

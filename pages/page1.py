@@ -37,16 +37,16 @@ def app():
     if direction == 'Upload image':
         ######################## image uploader ############################
         st.set_option('deprecation.showfileUploaderEncoding', False)
-        uploaded_file = st.file_uploader("Choose a JPG or PNG file", type=['jpg','png'])
+        uploaded_file = st.file_uploader("Choose a JPG or PNG file", type=['jpg', 'png'])
         if uploaded_file is not None:
             image = uploaded_file
             st.image(image, caption='Image loaded', use_column_width=True)
 
             img = PIL.Image.open(uploaded_file)
             img = img.save('img.jpg')
-
-
             st.write(prediction('./img.jpg'))
+
+
     if direction == 'Generate a random image':
 
         if st.button('Press here'):
